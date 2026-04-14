@@ -7,8 +7,9 @@ export cluster_name=<CLUSTER-NAME>
 ```
 oidc_id=$(aws eks describe-cluster --name $cluster_name --query "cluster.identity.oidc.issuer" --output text | cut -d '/' -f 5) 
 ```
+## Step 4: Configure IAM OIDC Provider
 
-## Check if there is an IAM OIDC provider configured already
+![IAM OIDC Provider Setup](screenshots/04-configure-IAM-OIDC-provider.png)
 
 ```
 aws iam list-open-id-connect-providers | grep $oidc_id | cut -d "/" -f4
