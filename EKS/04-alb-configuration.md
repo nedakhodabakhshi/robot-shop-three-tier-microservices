@@ -26,6 +26,7 @@ eksctl create iamserviceaccount \
   --attach-policy-arn=arn:aws:iam::<your-aws-account-id>:policy/AWSLoadBalancerControllerIAMPolicy \
   --approve
 ```
+![IAM Service Account](screenshots/08-iam-service-account.png)
 
 ## Deploy ALB controller
 
