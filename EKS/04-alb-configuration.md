@@ -13,6 +13,13 @@ aws iam create-policy \
     --policy-name AWSLoadBalancerControllerIAMPolicy \
     --policy-document file://iam_policy.json
 ```
+## Create IAM Policy
+
+![IAM Policy](screenshots/07-iam-policy.png)
+
+## Create IAM Service Account
+
+![IAM Service Account](screenshots/08-iam-service-account.png)
 
 Create IAM Role
 
