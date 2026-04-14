@@ -53,7 +53,7 @@ helm install aws-load-balancer-controller eks/aws-load-balancer-controller \
   --set region=<region> \
   --set vpcId=<your-vpc-id>
 ```
-![I]Install elb controller(screenshots/09-install-elb.controller.png)
+![Install elb controller](screenshots/09-install-elb.controller.png)
 
 Verify that the deployments are running.
 
