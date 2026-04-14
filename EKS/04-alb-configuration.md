@@ -41,6 +41,8 @@ Add helm repo
 helm repo add eks https://aws.github.io/eks-charts
 ```
 
+![AWS Load Balancer Controller](screenshots/09-install-elb.controller.png)
+
 Update the repo
 
 ```
