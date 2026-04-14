@@ -6,14 +6,13 @@ Download IAM policy
 curl -O https://raw.githubusercontent.com/kubernetes-sigs/aws-load-balancer-controller/v2.11.0/docs/install/iam_policy.json
 ```
 
+Create IAM Policy
+
 ```
-## Create IAM Policy
-
-![IAM Policy](screenshots/07-iam-policy.png)
-
-## Create IAM Service Account
-
-![IAM Service Account](screenshots/08-iam-service-account.png)
+aws iam create-policy \
+    --policy-name AWSLoadBalancerControllerIAMPolicy \
+    --policy-document file://iam_policy.json
+```
 
 Create IAM Role
 
@@ -34,8 +33,6 @@ Add helm repo
 ```
 helm repo add eks https://aws.github.io/eks-charts
 ```
-
-![AWS Load Balancer Controller](screenshots/09-install-elb.controller.png)
 
 Update the repo
 
